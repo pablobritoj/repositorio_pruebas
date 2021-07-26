@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+ 
+  </head>
+  <body>
+    <a href="index.html">Start</a>
+    <h1>Formulario de contacto</h1>
+    <form>
+      <fieldset>
+          <legend>Datos personales:</legend>
+        <label for="idPersona">Id de persona:</label><br/>
+        <input type="text" id="idPersona" name="idPersona" readonly="true" value="12DaiS"><br/>
+        <label for="nombre">Nombre:</label><br />
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingrese su nombre"
+          required
+        /><br />
+        <label for="apellido">Apellido:</label><br />
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Ingrese su apellido"
+        /><br />
+        <label for="email">email:</label><br />
+        <input type="email" id="email" name="email" placeholder="email" /><br />
+        <label for="edad">Edad:</label><br />
+        <input type="number" id="edad" name="edad" placeholder="Edad" /><br />
+        <label>Genero</label><br />
+        <input type="radio" id="masculino" name="genero" value="masculino" />
+        <label for="masculino">Masculino</label><br />
+        <input type="radio" id="femenino" name="genero" value="femenino" />
+        <label for="femenino">Femenino</label><br />
+        <label>Musica favorita</label><br />
+        <input type="checkbox" id="Clasica" name="musica" value="clasica" />
+        <label for="Clasica">Clasica</label><br />
+        <input type="checkbox" name="musica" id="Jazz" value="jazz" />
+        <label for="Jazz">Jazz</label><br />
+        <input type="checkbox" name="musica" id="Tango" value="tango" />
+        <label for="tango">Tango</label><br />
+        <label for="autos">Selecciona tu marca de autos preferida:</label><br />
+        <select name="autos" id="autos">
+          <option value="toyota">Toyota</option>
+          <option value="mazda">Mazda</option>
+          <option value="nissan">Nissan</option></select
+        ><br />
+        <label for="comentarios">Deja tus comentarios:</label><br />
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          cols="30"
+          rows="10"
+        ></textarea
+        ><br />
+
+        <input type="submit" value="Enviar" formnovalidate />
+      </fieldset>
+    </form>
+  </body>
+</html>
